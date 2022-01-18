@@ -102,6 +102,31 @@ ul li {
   font-size: 25px;
   display: none;
 }
+/* banner css end */
+.company {
+  margin-top: 80px;
+  text-align: center;
+}
+.company h3 {
+  font-size: 18px;
+  line-height: 28px;
+  color: #242f51;
+  font-weight: 500;
+}
+.company-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  grid-gap: 20px;
+ margin-top: 50px;
+}
+.signle-company {
+  max-width: 150px;
+}
+.signle-company img {
+  width: 100%;
+  object-fit: cover;
+}
 /* Responsive design */
 @media (max-width: 940px) {
   .toggle-menu-btn {
@@ -134,4 +159,13 @@ ul li {
     font-size: 39px;
     line-height: 52px;
   }
+  /* banner & nav end */
+  .company-container{
+    grid-template-columns: repeat(3,1fr);
+}
+}
+@media(max-width:766px){
+    .company-container{
+        grid-template-columns: 1fr;
+    }
 }
