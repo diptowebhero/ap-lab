@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1170px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  grid-gap: 40px;
+}
+/*=== Common Css End ===*/
+.header {
+  margin-top: 30px;
+}
+.nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+.navigation li {
+  display: inline-block;
+  padding: 0px 18px;
+}
+.navigation li a {
+  font-size: 16px;
+  line-height: 44px;
+  color: #242f51;
+  font-weight: 400;
+}
+.btn-primary {
+  width: 170px;
+  height: 57px;
+  border-radius: 29px;
+  background-color: #2500f9;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn-banner {
+  background: transparent;
+  color: #2500f9;
+  font-size: 16px;
+  line-height: 44px;
+  color: #2500f9;
+  font-weight: 500;
+}
+/* navbar css end */
+.banner {
+  background: url(/images/header-img/header-bg.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner-left h1 {
+  font-size: 60px;
+  line-height: 75px;
+  color: #242f51;
+  font-weight: 600;
+}
+.banner-left p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #616368;
+  font-weight: 400;
+  padding: 30px 0px;
+}
+.banner-right {
+  max-width: 360px;
+}
+.banner-right img {
+  width: 100%;
+}
+/* Responsive design */
+@media(max-width:940px){
+    
+}
