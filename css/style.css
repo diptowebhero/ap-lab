@@ -7,6 +7,9 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 .container {
   max-width: 1170px;
   padding: 0 30px;
@@ -91,7 +94,44 @@ ul li {
 .banner-right img {
   width: 100%;
 }
+/* toggle menu */
+#toggle-menu {
+  display: none;
+}
+.toggle-menu-btn {
+  font-size: 25px;
+  display: none;
+}
 /* Responsive design */
-@media(max-width:940px){
-    
+@media (max-width: 940px) {
+  .toggle-menu-btn {
+    display: block;
+  }
+  .navigation {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-500px);
+    transition: 0.3s;
+    background-color: #f4f4ff;
+    padding: 10px 0px;
+  }
+  .navigation li {
+    display: block;
+  }
+  #toggle-menu:checked ~ .navigation {
+    transform: translateY(0px);
+  }
+  .row {
+    grid-template-columns: 1fr;
+  }
+  .banner-left {
+    text-align: center;
+  }
+  .banner-left h1 {
+    font-size: 39px;
+    line-height: 52px;
+  }
 }
