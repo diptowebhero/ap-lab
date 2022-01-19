@@ -322,7 +322,6 @@ i.far.fa-check-circle {
   background: url(/images/section-bg.png);
   width: 100%;
   height: 100%;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: right top;
   margin-top: 150px;
@@ -344,135 +343,145 @@ i.far.fa-check-circle {
   color: #242f51;
   font-weight: 600;
 }
-/* Responsive design */
-@media (max-width: 940px) {
-  .toggle-menu-btn {
-    display: block;
-  }
-  .navigation {
-    position: absolute;
-    left: 0;
-    top: 90px;
-    text-align: center;
-    width: 100%;
-    transform: translateY(-500px);
-    transition: 0.3s;
-    background-color: #f4f4ff;
-    padding: 10px 0px;
-  }
-  .navigation li {
-    display: block;
-  }
-  #toggle-menu:checked ~ .navigation {
-    transform: translateY(0px);
-  }
-  .row {
-    grid-template-columns: 1fr;
-  }
-  .banner_container {
-    flex-direction: column-reverse;
-  }
-  .banner-left {
-    text-align: center;
-    width: 100%;
-  }
-  .banner-left h1 {
-    font-size: 39px;
-    line-height: 52px;
-  }
-  .banner_title {
-    margin: 0px auto;
-    font-size: 13px;
-    margin-bottom: 15px !important;
-  }
-  .banner-left p {
-    padding: 15px 0px;
-  }
-  /* banner & nav end */
-  .company-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .signle-feature,
-  .card-text {
-    margin-right: 19%;
-  }
-  .feature_title {
-    margin-right: 36%;
-  }
-  .jackpots-container {
-    grid-template-columns: 1fr;
-    grid-gap: 25px;
-  }
-  .jackpots-title h3 {
-    font-size: 25px;
-    line-height: 41px;
-    padding: 0px;
-  }
-  .title-border {
-    width: 200px;
-    height: 2px;
-    margin: 0px auto;
-  }
-  .jackpots-title {
-    flex-direction: column;
-    grid-gap: 12px;
-    text-align: center;
-  }
-  /* jackpots section end  */
-  .app_container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .ultimate-feature_main{
-    width: 100%;
-    text-align: center;
-  }
-  .ultimate-feature_main {
-    grid-template-columns: repeat(2, 1fr);
-    color: red;
-  }
+/* ultimate feature css end */
+#pricing {
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
-@media (max-width: 766px) {
-  .company-container,
-  .app_container,
-  .ultimate-feature_main {
-    grid-template-columns: 1fr;
-  }
-  .ultimate-feature_main{
-    width: 100%;
-    text-align: center;
-  }
-  .signle-feature {
-    flex-direction: column;
-    text-align: center;
-    margin-right: 0;
-  }
-  .feature_title,
-  .card-text {
-    text-align: center;
-    margin-right: 0;
-  }
-  .title-border {
-    border-left: 1px solid;
-    width: 200px;
-    height: 2px;
-    margin: 0px auto;
-    background-color: #4b4a48;
-  }
-  .card-text h3 {
-    font-size: 18px;
-    line-height: 45px;
-  }
-  .single-jackpots {
-    text-align: center;
-  }
-  /* jackpots section end */
-  .design-right {
-    width: 100%;
-  }
-  .design-right h2 {
-    font-size: 30px;
-  }
-  .app-title h1 {
-    font-size: 30px;
-  }
+.pricing-title {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.pricing-title h2 {
+  font-size: 36px;
+  line-height: 46px;
+  color: #242f51;
+  font-weight: 600;
+}
+.pricing-title p {
+  padding: 15px 0px;
+}
+.pricing-btn-container {
+  max-width: 283px;
+  height: 48px;
+  border-radius: 29px;
+  background-color: transparent;
+  margin: 30px auto;
+  border: 2px solid #ebebeb;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-main {
+  width: 125px;
+  height: 48px;
+  font-size: 16px;
+}
+.btn-empty {
+  border: 0;
+  outline: 0;
+  background: none;
+}
+.pricing_card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 635px;
+  grid-gap: 35px;
+  margin: 0px auto;
+  padding-top: 20px;
+}
+.single_card {
+  text-align: center;
+  max-width: 317px;
+  border-radius: 9px;
+  background-color: #fff;
+  filter: drop-shadow(3.837px 54.866px 31px rgba(144, 163, 177, 0.18));
+  overflow: hidden;
+}
+.card_2 {
+  border: 1px solid gray;
+}
+
+.card_title {
+  background: #f4f7f9;
+}
+.card_title h1 {
+  font-size: 60px;
+  line-height: 58px;
+  color: #242f51;
+  font-weight: 600;
+  padding: 20px 0px;
+}
+.card_title sub {
+  font-size: 18px;
+  line-height: 28px;
+  color: #999ca5;
+  font-weight: 400;
+}
+.card_title h3 {
+  font-size: 20px;
+  line-height: 28px;
+  color: #242f51;
+  font-weight: 600;
+}
+.card_title p {
+  padding-bottom: 20px;
+}
+
+.card_footer ul li {
+  font-size: 16px;
+  line-height: 48px;
+  color: #999ca5;
+}
+.card_footer ul {
+  margin-bottom: 15px;
+}
+/* pricing css end  */
+#testimonial {
+  background: url(/images/banner-3.png);
+  width: 100%;
+  height: 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+.testimonial_container {
+  max-width: 521px;
+  margin-right: 175px;
+}
+.testimonial_title h2 {
+  font-size: 40px;
+  line-height: 50px;
+  color: #242f51;
+  font-weight: 600;
+}
+.testimonial_title p {
+  padding: 15px 0px;
+}
+.customer_review h4 {
+  font-size: 20px;
+  line-height: 58px;
+  color: #242f51;
+  font-weight: 600;
+}
+.icon {
+  padding-top: 15px;
+}
+.icon i {
+  color: #ffcc00;
+  font-size: 20px;
+  line-height: 58px;
+}
+.customer {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.customer h4 {
+  font-size: 18px;
+  color: #242f51;
+  font-weight: 600;
+}
+.customer img {
+  margin-right: 20px;
 }
