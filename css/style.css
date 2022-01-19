@@ -22,6 +22,9 @@ a {
 ul li {
   list-style: none;
 }
+p {
+  color: #616368;
+}
 .row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -81,6 +84,14 @@ ul li {
   background-position: left bottom;
   background-size: cover;
 }
+.banner_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.banner-left {
+  width: 50%;
+}
 .banner_title {
   max-width: 362px;
   height: 35px;
@@ -111,7 +122,6 @@ i.far.fa-check-circle {
 .banner-left p {
   font-size: 18px;
   line-height: 28px;
-  color: #616368;
   font-weight: 400;
   padding: 30px 0px;
 }
@@ -181,7 +191,6 @@ i.far.fa-check-circle {
 .feature-right p {
   font-size: 16px;
   line-height: 26px;
-  color: #616368;
   font-weight: 400;
 }
 .signle-feature {
@@ -199,7 +208,6 @@ i.far.fa-check-circle {
 .signle-feature p {
   font-size: 16px;
   line-height: 26px;
-  color: #616368;
   font-weight: 400;
 }
 .feature_images {
@@ -212,7 +220,7 @@ i.far.fa-check-circle {
 .prototype {
   color: #2563ff !important;
 }
-/* feature css end */
+/*=== feature css end ===*/
 .jackpots {
   margin-top: 60px;
 }
@@ -227,10 +235,10 @@ i.far.fa-check-circle {
   font-weight: 600;
   padding-right: 48px;
 }
-.jackpots-title p {
+.jackpots-title,
+.card-text p {
   font-size: 16px;
   line-height: 26px;
-  color: #616368;
   font-weight: 400;
 }
 .title-border {
@@ -240,13 +248,101 @@ i.far.fa-check-circle {
   margin-right: 69px;
   background-color: #4b4a48;
 }
-.jackpots-container{
+.jackpots-container {
   margin-top: 80px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
   grid-gap: 50px;
   padding: 0px 40px;
+}
+.card-text,
+.app-text h3 {
+  font-size: 18px;
+  line-height: 58px;
+  font-weight: 600;
+}
+/* jackpots section end */
+#design {
+  margin-top: 100px;
+}
+.design-left {
+  max-width: 580px;
+}
+.design-left img {
+  width: 100%;
+  height: 100%;
+}
+.design-right {
+  width: 73%;
+}
+.design-right h2 {
+  font-size: 36px;
+  line-height: 46px;
+  color: #242f51;
+  font-weight: 600;
+}
+.design-right p {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 20px 0px;
+}
+/* design css end */
+#our-app {
+  margin-top: 100px;
+}
+.app-title {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+.app-title h1 {
+  font-size: 36px;
+  line-height: 46px;
+  color: #242f51;
+  font-weight: 600;
+}
+.app-title p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #616368;
+  font-weight: 400;
+  padding: 15px 0px;
+}
+.app_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  grid-gap: 50px;
+  text-align: center;
+  margin: 50px 30px;
+}
+/* our css end */
+#ultimate-feature {
+  background: url(/images/section-bg.png);
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-top: 150px;
+}
+.ultimate-feature_main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  grid-gap: 50px;
+  width: 50%;
+  margin-bottom: 40px;
+}
+.feature_title {
+  max-width: 400px;
+}
+.feature_title h2 {
+  font-size: 36px;
+  line-height: 46px;
+  color: #242f51;
+  font-weight: 600;
 }
 /* Responsive design */
 @media (max-width: 940px) {
@@ -273,8 +369,12 @@ i.far.fa-check-circle {
   .row {
     grid-template-columns: 1fr;
   }
+  .banner_container {
+    flex-direction: column-reverse;
+  }
   .banner-left {
     text-align: center;
+    width: 100%;
   }
   .banner-left h1 {
     font-size: 39px;
@@ -292,6 +392,17 @@ i.far.fa-check-circle {
   .company-container {
     grid-template-columns: repeat(3, 1fr);
   }
+  .signle-feature,
+  .card-text {
+    margin-right: 19%;
+  }
+  .feature_title {
+    margin-right: 36%;
+  }
+  .jackpots-container {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
   .jackpots-title h3 {
     font-size: 25px;
     line-height: 41px;
@@ -307,17 +418,38 @@ i.far.fa-check-circle {
     grid-gap: 12px;
     text-align: center;
   }
+  /* jackpots section end  */
+  .app_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ultimate-feature_main{
+    width: 100%;
+    text-align: center;
+  }
+  .ultimate-feature_main {
+    grid-template-columns: repeat(2, 1fr);
+    color: red;
+  }
 }
 @media (max-width: 766px) {
-  .company-container {
+  .company-container,
+  .app_container,
+  .ultimate-feature_main {
     grid-template-columns: 1fr;
+  }
+  .ultimate-feature_main{
+    width: 100%;
+    text-align: center;
   }
   .signle-feature {
     flex-direction: column;
     text-align: center;
+    margin-right: 0;
   }
-  .feature_title {
+  .feature_title,
+  .card-text {
     text-align: center;
+    margin-right: 0;
   }
   .title-border {
     border-left: 1px solid;
@@ -325,5 +457,22 @@ i.far.fa-check-circle {
     height: 2px;
     margin: 0px auto;
     background-color: #4b4a48;
+  }
+  .card-text h3 {
+    font-size: 18px;
+    line-height: 45px;
+  }
+  .single-jackpots {
+    text-align: center;
+  }
+  /* jackpots section end */
+  .design-right {
+    width: 100%;
+  }
+  .design-right h2 {
+    font-size: 30px;
+  }
+  .app-title h1 {
+    font-size: 30px;
   }
 }
