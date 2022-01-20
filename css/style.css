@@ -596,4 +596,33 @@ i.far.fa-check-circle {
 /* free_app_trail css end */
 .footer {
   background-color: #09142e;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer_nav ul li {
+  display: inline-block;
+  padding: 25px 20px;
+}
+.footer_content li a {
+  color: #fff;
+  font-size: 15px;
+}
+.social-icon {
+  font-size: 30px;
+  letter-spacing: 23px;
+  line-height: 44px;
+  color: #596787;
+  font-weight: 400;
+}
+.social-icon i:hover{
+  color: #fff;
+  transition: .3s;
+}
+.footer_content p{
+  margin-top: 40px;
+  color: #fff;
+  font-size: 14px;
 }
