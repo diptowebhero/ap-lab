@@ -94,6 +94,13 @@
     margin-bottom: 10px;
   }
 }
+@media (max-width: 768px) {
+  #ultimate-feature,
+  #testimonial,
+  #free_trail {
+    background: none;
+  }
+}
 @media (max-width: 766px) {
   .company-container,
   .app_container,
