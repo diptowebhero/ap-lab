@@ -118,6 +118,10 @@
     text-align: center;
     margin-right: 0;
   }
+  .pricing-title h2 {
+    font-size: 30px;
+    line-height: 42px;
+  }
   .feature_title,
   .card-text {
     text-align: center;
@@ -132,10 +136,18 @@
   }
   .card-text h3 {
     font-size: 18px;
-    line-height: 45px;
+    line-height: 30px;
   }
   .single-jackpots {
     text-align: center;
+  }
+  .jackpots-title {
+    padding: 0px 2px;
+  }
+  .jackpots-title h3 {
+    font-size: 23px;
+    line-height: 32px;
+    padding: 0px;
   }
   /* jackpots section end */
   .design-right {
