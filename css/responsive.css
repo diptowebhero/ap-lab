@@ -209,4 +209,14 @@
     font-size: 37px;
     line-height: 40px;
   }
+  .footer_nav ul li {
+    padding: 11px 11px;
+  }
+  .social-icon {
+    letter-spacing: 19px;
+    font-size: 25px;
+  }
+  .footer_content p {
+    font-size: 11px;
+  }
 }
