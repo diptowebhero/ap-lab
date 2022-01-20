@@ -472,6 +472,31 @@ i.far.fa-check-circle {
   font-size: 20px;
   line-height: 58px;
 }
+.customer_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons {
+  margin-top: 22px;
+  display: flex;
+}
+.fa-arrow-right,
+.fa-arrow-left {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #eff3f8;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #dee1e6;
+}
+.fa-arrow-left {
+  margin-left: 10px;
+  color: #2500f9;
+  background: #eff3f8;
+}
 .customer {
   display: flex;
   align-items: center;
@@ -484,4 +509,91 @@ i.far.fa-check-circle {
 }
 .customer img {
   margin-right: 20px;
+}
+.underline {
+  width: 1px;
+  background-color: #e7e7e7;
+  margin-left: 10px;
+  height: 49px;
+}
+/* testimonial css end */
+#faq_section {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.faq_title {
+  max-width: 600px;
+  text-align: center;
+  margin: 0px auto;
+}
+.faq_title h2 {
+  font-size: 40px;
+  line-height: 58px;
+  color: #242f51;
+  font-weight: 600;
+  padding: 15px 0px;
+}
+.faq_container {
+  margin-top: 53px;
+}
+.single_faq_title {
+  padding: 15px 0px;
+}
+.single_faq_title,
+.single_faq {
+  max-width: 945px;
+  background-color: #eff1f5;
+  margin: 0 auto;
+  padding: 30px;
+}
+.single_faq_title h3 {
+  font-size: 20px;
+  line-height: 58px;
+  color: #242f51;
+  font-weight: 600;
+}
+.single_faq_title p {
+  padding-right: 100px;
+}
+.single_faq {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px auto;
+  padding: 0px 30px;
+}
+.single_faq h3 {
+  font-size: 18px;
+  line-height: 58px;
+  color: #242f51;
+  font-weight: 500;
+}
+.single_faq,
+.fa-plus {
+  color: #242f51;
+}
+/* FAQ css end */
+#free_trail {
+  background: url(/images/free-trail.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.free_app_trail {
+  display: grid;
+  grid-template-columns: 608px auto;
+  place-items: center;
+  height: 413px;
+}
+.free_app_trail h2 {
+  font-size: 48px;
+  line-height: 58px;
+  color: #242f51;
+  font-weight: 600;
+}
+.free_app_trail p {
+  padding: 30px 0px;
+}
+/* free_app_trail css end */
+.footer {
+  background-color: #09142e;
 }

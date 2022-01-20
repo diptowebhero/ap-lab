@@ -83,6 +83,16 @@
     grid-template-columns: repeat(2, 1fr);
     color: red;
   }
+  .testimonial_container {
+    max-width: 521px;
+    text-align: center;
+    margin: auto;
+  }
+  .customer_review h4 {
+    font-size: 22px;
+    line-height: 31px;
+    margin-bottom: 10px;
+  }
 }
 @media (max-width: 766px) {
   .company-container,
@@ -135,9 +145,68 @@
     text-align: center;
     margin: 0;
   }
+  .customer img {
+    margin-right: 20px;
+    width: 55px;
+  }
+  .single_card {
+    width: 100%;
+    padding-bottom: 11px;
+  }
   .customer_review h4 {
     font-size: 22px;
     line-height: 31px;
     margin-bottom: 10px;
+  }
+  .fa-arrow-right,
+  .fa-arrow-left {
+    max-width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dee1e6;
+  }
+  .customer h4 {
+    font-size: 14px;
+  }
+  .underline {
+    height: 25px;
+  }
+  .fa-arrow-left {
+    color: #2500f9;
+  }
+  .customer img {
+    margin-right: 8px;
+  }
+  .customer p {
+    font-size: 11px;
+  }
+  .faq_title h2 {
+    font-size: 30px;
+    line-height: 41px;
+  }
+  .single_faq_title h3 {
+    font-size: 19px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  .single_faq_title p {
+    padding: 0;
+    font-size: 14px;
+  }
+  .single_faq h3 {
+    font-size: 15px;
+    line-height: 25px;
+    padding-right: 10px;
+  }
+  .free_app_trail {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+  .free_app_trail h2 {
+    font-size: 37px;
+    line-height: 40px;
   }
 }
