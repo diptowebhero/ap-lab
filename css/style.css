@@ -393,13 +393,15 @@ i.far.fa-check-circle {
 .single_card {
   text-align: center;
   max-width: 317px;
+  height: 500px;
   border-radius: 9px;
   background-color: #fff;
   filter: drop-shadow(3.837px 54.866px 31px rgba(144, 163, 177, 0.18));
   overflow: hidden;
 }
 .card_2 {
-  border: 1px solid gray;
+  border: 2px solid #ebebeb;
+  height: 600px;
 }
 
 .card_title {
